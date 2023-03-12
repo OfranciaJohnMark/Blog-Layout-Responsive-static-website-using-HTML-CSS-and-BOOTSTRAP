@@ -1,0 +1,599 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+/* Header */
+#main-header{
+    width: 100%;
+}
+.navbar{
+    background-color: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 1em;
+}
+.navbar .nav-logo{
+    color: #fff;
+   text-transform: uppercase;
+   
+}
+.nav-menu li{
+    display: inline-block;
+   padding: 10px;
+}
+.nav-menu li a{
+    color: #fff;
+    text-decoration: none;
+    text-transform: capitalize;
+ 
+    transition: color 0.3s ease-in-out;
+}
+.nav-menu li a.active{
+    color:#9acd32;
+}
+.nav-menu li a:hover{
+    color:#9acd32;
+}
+@media (max-width:768px){
+    .navbar{
+        width: 100%;
+    }
+    .nav-menu li a{
+        font-size: 0.8rem;
+        padding: 10px 0;
+    }
+}
+/* End of Header */
+/* Banner */
+
+.banner-section{
+    width: 900px;
+    margin: 0 auto;
+    margin-bottom: 2em;
+}
+.banner-section .banner-title{
+    font-size: 5rem;
+    padding-top: 0.5em;
+    text-transform: capitalize;
+}
+.banner-section .banner-text{
+    padding: 1em 0;
+    font-size: 1.3rem;
+}
+.toggle-button{
+    position: absolute;
+    top: 1em;
+    right: 12em;
+    display: none;
+}
+.toggle-button i{
+    font-size: 2rem;
+    color: #fff;
+}
+@media (max-width:400px){
+    .toggle-button{
+        display: block;
+        right: 1em;
+    }
+    .nav-links{
+       
+        width: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+    .nav-links ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       
+      
+    }
+    .nav-links li{
+       
+        text-align: center;
+       
+    }
+}
+@media (max-width:768px){
+    .banner-section{
+        width: 100%;
+       text-align: center;
+    }
+    .banner-section .banner-title{
+        font-size: 3.5rem;
+       
+    }
+    .banner-section .banner-text{
+        font-size: 1rem;
+     
+    }
+}
+@media (max-width:400px){
+    .banner-section{
+        width: 100%;
+        padding: 0;
+    }
+    .banner-section .banner-title{
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .banner-section .banner-text{
+        margin: 0;
+        text-align: center;
+    }
+    .navbar .nav-logo{
+        font-size: 1.2rem;
+    }
+}
+
+/* End of Banner */
+
+/* Feature Post */
+.features-section{
+    width: 900px;
+    margin: 0 auto;
+    height: 5px;
+    background-color: #000;
+}
+.features-flex{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 300px;
+}
+.feature-left{
+    width: 420px;
+    height: 480px;
+}
+.feature-left h2{
+    font-size: 3rem;
+    margin-top: 10px;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+.feature-left p{
+    padding-left: 50px;
+    font-size: 1rem;
+    padding-bottom: 1em;
+}
+.feature-left hr{
+    width: 420px;
+    height: 5px;
+    background-color: #000;
+    margin-bottom: 1em;
+}
+.left-img{
+   background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.5)), url("img/alexander-jawfox-Kl2t5U6Gkm0-unsplash.jpg");
+   background-size: cover;
+   height: 500px;
+   position: relative;
+}
+.left-btn{
+    position: absolute;
+    top: 400px;
+    left: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+}
+.feature-right{
+    width: 420px;
+    height: 640px;
+    background:url("img/GettyImages-1026164422_edited_edited.jpg");
+    background-size: cover;
+    position: relative;
+    margin-top: 1.8em;
+}
+.right-btn{
+    position: absolute;
+    top: 600px;
+    right: 0;
+    text-decoration: none;
+    color: #000;
+    background-color: #9acd32;
+    padding:0.5em 1em;
+    font-weight: bold;
+    border: 2px solid #000;
+}
+@media (max-width:768px){
+    .features-section{
+        width: 100%;
+    }
+    .features-flex{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .feature-left{
+        width: 100%;
+        text-align: center;
+    }
+    .feature-left hr{
+        width: 100%;
+    }
+    .feature-right{
+        display: none;
+    }
+    .left-btn{
+        border: 1px solid #000;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+@media (max-width:400px){
+    .features-section{
+        width: 100%;
+    }
+    .features-flex{
+        width: 100%;
+    }
+    .feature-left{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .feature-left h2{
+        font-size: 2rem;
+       margin: 0;
+        padding: 5px 0;
+    }
+    .feature-left p{
+        margin: 0;
+        padding: 5px 0;
+    }
+    .feature-left hr{
+        width: 100%;
+    }
+    .feature-right{
+        display: none;
+    }
+    .left-btn{
+        border: 1px solid #000;
+        left: 0;
+        width: 100%;
+        padding: 0 20px;
+    }
+}
+/* End of Feature Post */
+
+
+/* End of Fitness Section */
+.fitness-section{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 700px;
+}
+.banner-intro{
+   border-top: 2px solid #000;
+   border-bottom: 2px solid #000;
+   position: relative;
+   height: 130px;
+}
+.banner-intro h2{
+    text-transform: uppercase;
+    padding: 20px 0 0 50px;
+    font-size: 3rem;
+}
+.banner-intro p{
+    padding: 0 0 0 50px;
+    font-size: 1.3rem;
+    
+}
+.fitness-btn{
+    position: absolute;
+    right: 0;
+    top: 77px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    padding:0.5em 1em;
+   font-weight: 700;
+    font-size: 1.5rem;
+}
+.fitness-section .row{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 12px;
+    text-align: center;
+   
+}
+.fitness-section .col{
+   
+    height: 250px;
+    background-color: #9acd32;
+}
+.fitness-section .col-1{
+    background-image: url("img/f1.jpg");
+    background-size: cover;
+    position: relative;
+}
+.fitness-section .col-1 .col-text{
+    position: absolute;
+    top: 155px;
+    left:0;
+    background-color: #9acd32;
+    padding: 25px 0;
+   
+}
+.fitness-section .col-1 .col-text h3{
+    font-weight:500;
+}
+.fitness-section .col-2{
+    background-image: url("img/f2.jpg");
+    background-size: cover;
+    position: relative;
+}
+.col-2 .col-text-2{
+    position: absolute;
+    top: 155px;
+    left:0;
+    background-color: #9acd32;
+    padding: 25px 0;
+}
+.col-2 .col-text-2 h3{
+    font-weight:500;
+}
+.col-3{
+    padding: 2em;
+}
+.col-3 .col-text-3 p{
+    text-align: justify;
+}
+@media (max-width:768px){
+    .fitness-section{
+        width: 100%;
+    }
+    .fitness-section .row{
+        grid-template-columns: repeat(1,1fr);
+        margin-top: 1em;
+    }
+    .fitness-section .col{
+        height: 500px;
+    }
+    .fitness-section .col-1 .col-text{
+        width: 100%;
+        top: 380px;
+        padding: 50px 0;
+    }
+    .fitness-section .col-2 .col-text-2{
+        width: 100%;
+        top: 380px;
+        padding: 50px 0;
+    }
+    .col-3{
+        padding: 5em;
+    }
+    .col-3 .col-text-3 h3{
+       
+        font-size: 3rem;
+    }
+    .col-3 .col-text-3 p{
+        font-size: 1.5rem;
+        padding: 30px 50px;
+    }
+}
+@media (max-width:400px){
+    .banner-intro{
+        width: 100%;
+        align-items: center;
+        padding:0 2em;
+    }
+    .banner-intro h2{
+       
+        text-align: center;
+        font-size: 2rem;
+        padding: 0;
+    }
+    .banner-intro p{
+        padding: 0;
+        text-align: center;
+        
+    }
+    .banner-intro .fitness-btn{
+        font-size: 1rem;
+        text-align: center;
+        top: 90px;
+        right: 35%;
+    }
+    .fitness-section .row{
+        grid-row-gap: 2em;
+    }
+    .fitness-section .col-1{
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .fitness-section .col{
+        height: 300px;
+    }
+    .fitness-section .col-2{
+        background-size:contain;
+        background-repeat: no-repeat;
+    }
+    .fitness-section .col-1 .col-text{
+        width: 100%;
+        top: 200px;
+        padding: 50px 0;
+    }
+    .fitness-section .col-2 .col-text-2{
+        width: 100%;
+        top: 200px;
+        padding: 50px 0;
+    }
+    .col-3{
+        padding: 2em 0;
+       
+    }
+    .col-3 .col-text-3 h3{
+        font-size: 1.3rem;
+        padding: 1em 2em;
+    }
+    .col-3 .col-text-3 p{
+        font-size: 1rem;
+        padding: 0 2em;
+    }
+    
+}
+
+/* Nutrition Section */
+.nutrition-section{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.nutri-card{
+    width: 100%;
+    position: relative;
+    border: 2px solid #000;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+.nutri-card .card-image{
+    width: 100%;
+}
+.nutri-caption{
+    background-color: #fff;
+    position: absolute;
+    top: 400px;
+    padding: 3em 2em;
+}
+.nutri-text{
+    padding-bottom: 1em;
+}
+.nutri-caption h3{
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+@media (max-width:768px){
+    .nutrition-section{
+        width: 100%;
+    }
+    .nutri-caption{
+        top: 285px;
+    }
+}
+@media (max-width:400px){
+    .nutrition-section{
+        width: 100%;
+    }
+    .nutri-caption{
+        top: 150px;
+        height: 100px;
+        padding: 1em;
+    }
+    .nutri-caption p{
+        font-size: 0.5rem;
+    }
+    .nutri-caption h3{
+        font-size: 1.2rem;
+    }
+    .nutri-card{
+        padding: 0;
+    }
+}
+
+/* Motivation Section */
+.motivation-section{
+    width: 900px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+.motivation-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 2em;
+}
+.img-flex{
+    background-color: red;
+    width: 430px;
+    height: 400px;
+}
+.flex-1{
+    background-image: url("img/m1.jpg");
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.flex-1 p{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.flex-1 h2{
+    position: absolute;
+    right: 10px;
+    top: 350px;
+    font-weight: 500;
+}
+.flex-2{
+    background-image: url("img/m3.jpg");
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+.flex-2 p{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+}
+.flex-2 h2{
+    position: absolute;
+    right: 10px;
+    top: 350px;
+    font-weight: 500;
+}
+@media (max-width:768px){
+    .motivation-section{
+        width: 100%;
+    }
+    .motivation-flex{
+        flex-direction: column;
+    }
+    .img-flex{
+        width: 80%;
+        margin: 1em 0;
+    }
+}
+@media (max-width:400px){
+    .motivation-section{
+        width: 100%;
+    }
+    .motivation-flex{
+        flex-direction: column;
+    }
+    .img-flex{
+        width: 100%;
+        margin: 1em 0;
+    }
+}
+/* Contact Section */
+.contact-section{
+    width: 1200px;
+    margin: 2em auto;
+    background-color: #000;
+}
+.contact-flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    padding: 5em 0;
+}
+.contact-flex h2{
+    color: #fff;
+}
+.contact-form{
+    display: flex;
+    flex-direction: column;
+}
